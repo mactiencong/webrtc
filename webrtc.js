@@ -10,8 +10,8 @@ function playUserMedia(mediaTagId, stream){
 var peer = null;
 var conn = null;
 function connectPeer(){
-    peer = new Peer({key: '4oxfts97y3m78pvi'});
-    //peer = new Peer({key: 'peerjs', host: "matico-webcrtc.herokuapp.com", secure: true, port: 443});
+    //peer = new Peer({key: '4oxfts97y3m78pvi'});
+    peer = new Peer({key: 'peerjs', host: "matico-webcrtc.herokuapp.com", secure: true, port: 443});
     peer.on("open",(user_id)=>{
         console.log("UserID: " + user_id);
         $("#user-id").html("UserID: " + user_id);
