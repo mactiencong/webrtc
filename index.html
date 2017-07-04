@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>matico rtc</title>
+    </head>
+    <script src="jquery.js"></script>
+    <script src="peer.js"></script>
+    <script src="webrtc.js"></script>
+    <body>
+        <h3 id="user-id">UserID: ...</h3>
+        <button id="btnConnect">Connect</button>
+        <br/><br/>
+        <video width="320" height="240" id="local-user-media" style="background-color: black" controls></video>
+        <br/><br/>
+        <input id="txtUserId" type="text" />
+        <button id="btnRequestCall">Dial</button>
+        <br/><br/>
+        <button id="btnCallNow">Call Now</button>
+        <br/><br/>
+        <video width="320" height="240" id="remote-user-media" style="background-color: black" controls></video>
+    </body>
+</html>
